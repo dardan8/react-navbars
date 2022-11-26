@@ -1,221 +1,65 @@
 import React from "react";
 import "./navbar.css";
+import { navBarItems } from "../data";
 
-import {
-  RiDashboardLine,
-  RiHeartsLine,
-  RiBrushLine,
-  RiMailLine,
-  RiArrowRightLine,
-} from "react-icons/ri";
+import { RiArrowRightLine, RiSearchLine } from "react-icons/ri";
 
 import Logo from "../assets/dribble.svg";
+import UserAvatar from "../assets/user-avatar.webp";
+
 const Navbar = () => {
   return (
     <nav className="main-navigation">
       <img alt="logo" className="logo-image" src={Logo} />
       <ul>
-        <li className="has-item">
-          Inspiration
-          <div className="dropdown-area-1">
-            <ul>
-              <li>
-                <a href="#" target="_self">
-                  <RiDashboardLine className="icon-dashboard" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Explore Design Work</p>
-                      <p className="submenu-text-secondary">
-                        Trending designs to inspire you
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-dashboard" />
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.w3schools.com/">
-                  <RiHeartsLine className="icon-heart" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">New and Noteworthy</p>
-                      <p className="submenu-text-secondary">
-                        Latest news from our blog
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-heart" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/">
-                  <RiBrushLine className="icon-brush" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Certified Designers</p>
-                      <p className="submenu-text-secondary">
-                        Get quotes and samples from top designers
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-brush" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/" target="_blank">
-                  <RiMailLine className="icon-mail" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Weekly Warm-Up</p>
-                      <p className="submenu-text-secondary">
-                        Susbcribe to our weekly newsletter
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-mail" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li className="has-item">
-          Find Work
-          <div className="dropdown-area-1">
-            <ul>
-              <li>
-                <a href="https://www.w3schools.com/" target="_blank">
-                  <RiDashboardLine className="icon-dashboard" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Explore Design Work</p>
-                      <p className="submenu-text-secondary">
-                        Trending designs to inspire you
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-dashboard" />
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.w3schools.com/">
-                  <RiHeartsLine className="icon-heart" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">New and Noteworthy</p>
-                      <p className="submenu-text-secondary">
-                        Latest news from our blog
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-heart" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/">
-                  <RiBrushLine className="icon-brush" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Certified Designers</p>
-                      <p className="submenu-text-secondary">
-                        Get quotes and samples from top designers
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-brush" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/" target="_blank">
-                  <RiMailLine className="icon-mail" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Weekly Warm-Up</p>
-                      <p className="submenu-text-secondary">
-                        Susbcribe to our weekly newsletter
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-mail" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-            </div>
-        </li>
-
-        <li>Learn Design</li>
-        <li>Go Pro</li>
-        <li className="has-item">Design Files
-        <div className="dropdown-area-1">
-            <ul>
-              <li>
-                <a href="https://www.w3schools.com/" target="_blank">
-                  <RiDashboardLine className="icon-dashboard" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Explore Design Work</p>
-                      <p className="submenu-text-secondary">
-                        Trending designs to inspire you
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-dashboard" />
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.w3schools.com/">
-                  <RiHeartsLine className="icon-heart" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">New and Noteworthy</p>
-                      <p className="submenu-text-secondary">
-                        Latest news from our blog
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-heart" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/">
-                  <RiBrushLine className="icon-brush" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Certified Designers</p>
-                      <p className="submenu-text-secondary">
-                        Get quotes and samples from top designers
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-brush" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/" target="_blank">
-                  <RiMailLine className="icon-mail" />
-                  <div className="submenu-item">
-                    <div>
-                      <p className="submenu-text-main">Weekly Warm-Up</p>
-                      <p className="submenu-text-secondary">
-                        Susbcribe to our weekly newsletter
-                      </p>
-                    </div>
-                    <RiArrowRightLine className="arrow-mail" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          </li>
+        {navBarItems.map((item, index) => {
+          return (
+            <li key={index} className={item.items ? "has-item" : ""}>
+              {item.name}
+              {item.items ? (
+                <div className="dropdown-area-1">
+                  <ul>
+                    {item.items.map((subitem, index) => {
+                      return (
+                        <li key={index}>
+                          <a href={subitem.link} target="_self">
+                            <subitem.icon className={subitem.class} />
+                            <div className="submenu-item">
+                              <div>
+                                <p className="submenu-text-main">
+                                  {subitem.title}
+                                </p>
+                                <p className="submenu-text-secondary">
+                                  {subitem.subtitle}
+                                </p>
+                              </div>
+                              <RiArrowRightLine className="arrow-dashboard" />
+                            </div>
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              ) : (
+                ""
+              )}
+            </li>
+          );
+        })}
       </ul>
-      <form>
-      <RiArrowRightLine />
-      <input type="search" placeholder="Search..." class="input-field"/>
-        </form>      
-      <img></img>
-      <button>Upload</button>
+      <div className="nav-second">
+        <form>
+          <RiSearchLine className="form-icon" />
+          <input
+            type="search"
+            placeholder="Search..."
+            className="input-field"
+          />
+        </form>
+        <img src={UserAvatar} className="user-avatar" />
+        <button className="primary-button">Upload</button>
+      </div>
     </nav>
   );
 };
