@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-navbars/static/css/main.a5ba8b41.css",
+    "main.js": "/react-navbars/static/js/main.0d90baba.js",
+    "static/js/787.c1772abb.chunk.js": "/react-navbars/static/js/787.c1772abb.chunk.js",
+    "static/media/user-avatar.webp": "/react-navbars/static/media/user-avatar.8cb8bca9e5fd2d97ac27.webp",
+    "static/media/dribble.svg": "/react-navbars/static/media/dribble.e6f8a5943d6c130cca4f4780710fe3ee.svg",
+    "static/media/logo.svg": "/react-navbars/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-navbars/index.html",
+    "main.a5ba8b41.css.map": "/react-navbars/static/css/main.a5ba8b41.css.map",
+    "main.0d90baba.js.map": "/react-navbars/static/js/main.0d90baba.js.map",
+    "787.c1772abb.chunk.js.map": "/react-navbars/static/js/787.c1772abb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5ba8b41.css",
+    "static/js/main.0d90baba.js"
+  ]
+}
